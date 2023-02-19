@@ -22,9 +22,12 @@ nav {
   height: 40px;
 }
 
+.spacer {
+  height: 50px;
+}
+
 .header-image {
   width: 100%;
-  margin-top: 80px;
 }
 
 .content {
@@ -45,7 +48,17 @@ p {
   text-align: center;
 }
 
-.content a {
+.header-title {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.subtitle {
+  margin-top: 0;
+}
+
+.content a,
+button {
   height: 56px;
   line-height: 56px;
   text-align: center;
@@ -57,6 +70,49 @@ p {
   font-weight: 600;
   text-decoration: none;
   color: white;
+}
+
+.popup-container {
+  height: 0;
+  transition: height 0.25s;
+  overflow: hidden;
+}
+
+.popup-container.show {
+  height: 400px;
+}
+
+.popup {
+  margin-top: 20px;
+  padding: 20px;
+  width: 320px;
+  border: 10px solid #f46c63;
+  border-radius: 50px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup p {
+  margin: 0;
+}
+
+.popup .bold {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.popup .bold.first {
+  margin-top: 0;
+}
+
+.popup .normal {
+  font-weight: normal;
+}
+
+.popup .final {
+  margin-top: 20px;
 }
 
 .footer {
